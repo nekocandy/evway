@@ -31,8 +31,10 @@
     "node": "18.17.1"
   },
   "dependencies": {
+    "@auth/upstash-redis-adapter": "^1.0.0",
     "@trpc/client": "^10.38.4",
     "@trpc/server": "^10.38.4",
+    "@upstash/redis": "^1.22.0",
     "consola": "^3.2.3",
     "dayjs": "^1.11.10",
     "kysely": "^0.26.3",
