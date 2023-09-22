@@ -47,6 +47,12 @@ export default defineNuxtConfig({
     auth: {
       GOOGLE_CLIENT_ID: process.env.AUTH_SECRET,
       GOOGLE_CLIENT_SECRET: process.env.AUTH_SECRET,
+      SECRET: process.env.AUTH_SECRET,
+      //  use upstash adapter because no native redis adapter for authjs
+      upstash: {
+        URL: process.env.AUTH_UPSTASH_URL,
+        TOKEN: process.env.AUTH_UPSTASH_TOKEN,
+      },
     },
   },
 })
