@@ -1,3 +1,4 @@
+/* eslint-disable n/prefer-global/process */
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -40,5 +41,12 @@ export default defineNuxtConfig({
 
   auth: {
     globalAppMiddleware: true,
+  },
+
+  runtimeConfig: {
+    auth: {
+      GOOGLE_CLIENT_ID: process.env.AUTH_SECRET,
+      GOOGLE_CLIENT_SECRET: process.env.AUTH_SECRET,
+    },
   },
 })
