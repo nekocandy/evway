@@ -5,12 +5,16 @@
     "dictionaries": [],
     "words": [
         "antfu",
+        "authjs",
         "commitlint",
         "consola",
         "kysely",
         "notivue",
         "nuxt",
+        "sidebase",
+        "TRPC",
         "unocss",
+        "upstash",
         "vueuse"
     ],
     "ignoreWords": [],
