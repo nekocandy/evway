@@ -41,6 +41,9 @@ dependencies:
   redis-om:
     specifier: ^0.4.2
     version: 0.4.2
+  std-env:
+    specifier: ^3.4.3
+    version: 3.4.3
   trpc-nuxt:
     specifier: ^0.10.12
     version: 0.10.12(@trpc/client@10.38.4)(@trpc/server@10.38.4)
@@ -9414,7 +9417,6 @@ packages:
 
   /std-env@3.4.3:
     resolution: {integrity: sha512-f9aPhy8fYBuMN+sNfakZV18U39PbalgjXG3lLB9WkaYTxijru61wb57V9wxxNthXM5Sd88ETBWi29qLAsHO52Q==}
-    dev: true
 
   /streamsearch@1.1.0:
     resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
