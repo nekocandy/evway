@@ -7,6 +7,8 @@ definePageMeta({
     navigateAuthenticatedTo: 'dashboard',
   },
 })
+
+const { signIn, status } = useAuth()
 </script>
 
 <template>
@@ -51,9 +53,12 @@ definePageMeta({
           Login
         </div>
 
-        <button flex items-center gap-2 rounded-md bg-white px-4 py-2 font-500 text-black>
-          Continue with
-          <div i-bi-google />
+        <button flex transform items-center gap-2 rounded-md bg-white px-4 py-2 font-500 text-black duration-300 class="translate" @click="signIn('google')">
+          <div v-if="status === 'unauthenticated'" flex items-center gap-2>
+            Continue with
+            <div i-bi-google />
+          </div>
+          <div v-else loader />
         </button>
       </div>
 
