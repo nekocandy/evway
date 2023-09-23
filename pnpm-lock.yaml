@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^0.8.4
     version: 0.8.4(nuxt@3.7.3)(vite@4.4.9)
   '@sidebase/nuxt-auth':
-    specifier: 0.6.0-beta.5
-    version: 0.6.0-beta.5(@upstash/redis@1.22.0)(next-auth@4.21.1)(vue@3.3.4)
+    specifier: 0.5.0
+    version: 0.5.0(@upstash/redis@1.22.0)(next-auth@4.21.1)
   '@unocss/eslint-config':
     specifier: ^0.55.7
     version: 0.55.7(eslint@8.49.0)(typescript@5.2.2)
@@ -2526,16 +2526,13 @@ packages:
       rollup: 3.29.2
     dev: true
 
-  /@sidebase/nuxt-auth@0.6.0-beta.5(@upstash/redis@1.22.0)(next-auth@4.21.1)(vue@3.3.4):
-    resolution: {integrity: sha512-3MKnW/V5SX1BVzV4olBuuSDIehfmCveFJwwxP5ho63CEFmxPXUqQTQs9jzjBJ1NUJnOsH/BIjkkun0lVfcr9tg==}
+  /@sidebase/nuxt-auth@0.5.0(@upstash/redis@1.22.0)(next-auth@4.21.1):
+    resolution: {integrity: sha512-Zq0laKbRjX3luAJrkSTYE9gkLttFO5LiWB9qq5xiYQGmtKxY9cu8sk9KeUVZ3z6shjEqHdtwM5FFCKGGvwVALA==}
     peerDependencies:
       next-auth: ^4.21.1
     dependencies:
       '@nuxt/kit': 3.7.3
-      '@vueuse/core': 9.13.0(vue@3.3.4)
       defu: 6.1.2
-      h3: 1.8.1
-      knitwork: 1.0.0
       next-auth: 4.21.1(next@13.5.2)(react-dom@18.2.0)(react@18.2.0)
       nitropack: 2.6.3(@upstash/redis@1.22.0)
       requrl: 3.0.2
@@ -2551,12 +2548,10 @@ packages:
       - '@planetscale/database'
       - '@upstash/redis'
       - '@vercel/kv'
-      - '@vue/composition-api'
       - encoding
       - idb-keyval
       - rollup
       - supports-color
-      - vue
       - xml2js
     dev: true
 
@@ -2755,10 +2750,6 @@ packages:
 
   /@types/unist@2.0.8:
     resolution: {integrity: sha512-d0XxK3YTObnWVp6rZuev3c49+j4Lo8g4L1ZRm9z5L0xpoZycUPshHgczK5gsUMaZOstjVYYi09p5gYvUtfChYw==}
-    dev: true
-
-  /@types/web-bluetooth@0.0.16:
-    resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
     dev: true
 
   /@types/web-bluetooth@0.0.17:
@@ -3519,24 +3510,8 @@ packages:
       - vue
     dev: true
 
-  /@vueuse/core@9.13.0(vue@3.3.4):
-    resolution: {integrity: sha512-pujnclbeHWxxPRqXWmdkKV5OX4Wk4YeK7wusHqRwU0Q7EFusHoqNA/aPhB6KCh9hEqJkLAJo7bb0Lh9b+OIVzw==}
-    dependencies:
-      '@types/web-bluetooth': 0.0.16
-      '@vueuse/metadata': 9.13.0
-      '@vueuse/shared': 9.13.0(vue@3.3.4)
-      vue-demi: 0.14.6(vue@3.3.4)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: true
-
   /@vueuse/metadata@10.4.1:
     resolution: {integrity: sha512-2Sc8X+iVzeuMGHr6O2j4gv/zxvQGGOYETYXEc41h0iZXIRnRbJZGmY/QP8dvzqUelf8vg0p/yEA5VpCEu+WpZg==}
-    dev: true
-
-  /@vueuse/metadata@9.13.0:
-    resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
     dev: true
 
   /@vueuse/nuxt@10.4.1(nuxt@3.7.3)(vue@3.3.4):
@@ -3559,15 +3534,6 @@ packages:
 
   /@vueuse/shared@10.4.1(vue@3.3.4):
     resolution: {integrity: sha512-vz5hbAM4qA0lDKmcr2y3pPdU+2EVw/yzfRsBdu+6+USGa4PxqSQRYIUC9/NcT06y+ZgaTsyURw2I9qOFaaXHAg==}
-    dependencies:
-      vue-demi: 0.14.6(vue@3.3.4)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: true
-
-  /@vueuse/shared@9.13.0(vue@3.3.4):
-    resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
     dependencies:
       vue-demi: 0.14.6(vue@3.3.4)
     transitivePeerDependencies:
