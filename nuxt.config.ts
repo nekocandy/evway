@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   },
 
   auth: {
-    globalAppMiddleware: true,
+    enableGlobalAppMiddleware: true,
   },
 
   runtimeConfig: {
