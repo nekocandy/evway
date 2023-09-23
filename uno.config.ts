@@ -39,4 +39,7 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  shortcuts: {
+    loader: 'i-line-md-loading-twotone-loop',
+  },
 })
