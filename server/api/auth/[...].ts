@@ -17,12 +17,8 @@ export default NuxtAuthHandler({
     GoogleProvider.default({
       clientId: useRuntimeConfig().auth.GOOGLE_CLIENT_ID,
       clientSecret: useRuntimeConfig().auth.GOOGLE_CLIENT_SECRET,
-      authorization: {
-        params: {
-          prompt: 'consent',
-          access_type: 'offline',
-          response_type: 'code',
-        },
+      httpOptions: {
+        timeout: 40000,
       },
     }),
   ],
