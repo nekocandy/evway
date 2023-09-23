@@ -11,6 +11,7 @@
         "kysely",
         "notivue",
         "nuxt",
+        "Scooty",
         "sidebase",
         "TRPC",
         "unocss",
