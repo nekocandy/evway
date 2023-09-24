@@ -10,7 +10,7 @@
         <img h-fit border-1 border-l-0 border-gray-400 rounded-xl src="https://cdn.discordapp.com/attachments/1154420365083299911/1155473574715465800/Frame_91.png">
         <img h-fit border-1 border-l-0 border-gray-400 rounded-xl src="https://cdn.discordapp.com/attachments/1154420365083299911/1155473575206195260/Frame_93.png">
       </div>
-      <iframe flex-1 src="https://www.openstreetmap.org/export/embed.html?bbox=72.47337341308595%2C18.827016441626743%2C73.13941955566408%2C19.11921945341411&amp;layer=mapnik" style="border: 1px solid black" /><br><small><a href="https://www.openstreetmap.org/#map=12/18.9732/72.8064">View Larger Map</a></small>
+      <iframe flex-1 src="https://www.openstreetmap.org/export/embed.html?bbox=72.47337341308595%2C18.827016441626743%2C73.13941955566408%2C19.11921945341411&amp;layer=mapnik" style="border: 1px solid black" />
 
       <button rounded-md bg-white py-2 font-bold font-sans uppercase text-black>
         Book EV
