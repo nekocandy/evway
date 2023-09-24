@@ -30,4 +30,26 @@ export const evModelRouter = router({
         return null
       }
     }),
+
+  createModel: protectedProcedure
+    .input(z.string())
+    .mutation(async ({ input, ctx }) => {
+      const redisClient = await getRedisClient()
+      const evModelRepo = getEVModelsRepository(redisClient)
+
+      try {
+        const evModel = await evModelRepo.save({
+          name: input,
+          addedBy: ctx.user.user?.name,
+          addedAt: Date.now(),
+        })
+        return {
+          evModel,
+        }
+      }
+      catch (error) {
+        consola.error(error)
+        return null
+      }
+    }),
 })
