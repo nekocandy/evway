@@ -16,9 +16,8 @@
           <img w-24 src="~/assets/redis-stack.png" alt="redis-stack">
         </div>
       </div>
-      <div class="bg-[#1E1E1E]" rounded-md px-4 py-4>
-        HH
-      </div>
+
+      <DashboardSearchEVModels />
     </div>
   </div>
 </template>
