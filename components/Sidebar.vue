@@ -38,14 +38,14 @@ const PATHS: PathOption[] = [
 
 <template>
   <div class="bg-[#1E1E1E]" flex flex-col gap-4 px-10 py-8 font-sans text-white>
-    <div flex gap-2 text-4xl font-bold>
+    <NuxtLink flex gap-2 text-4xl font-bold to="/dashboard">
       <span class="text-[#E6FF01]" tracking-wide>
         EVWAY
       </span>
       <span class="text-[#FF24BD]">
         .
       </span>
-    </div>
+    </NuxtLink>
 
     <div flex flex-col gap-4 pt-8>
       <NuxtLink
