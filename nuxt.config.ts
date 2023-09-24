@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: 'opinionated nuxt',
+      title: 'EVWAY.',
       meta: [
         {
           name: 'description',
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'icon',
-          href: '/oink.svg',
+          href: 'https://cdn.discordapp.com/attachments/1154420365083299911/1155470389439385724/EV_Fav.png',
         },
       ],
     },
