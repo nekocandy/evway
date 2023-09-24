@@ -2,7 +2,7 @@ import { Schema } from 'redis-om'
 
 export const evModelsSchema = new Schema('evModels', {
   name: {
-    type: 'string',
+    type: 'text',
   },
   addedBy: {
     type: 'string',
