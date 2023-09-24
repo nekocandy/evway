@@ -47,7 +47,7 @@ async function addVehicle() {
       <div v-if="dataLoading" loader />
     </div>
 
-    <div flex flex-col gap-2 pt-1 font-sans>
+    <div flex flex-col gap-2 overflow-y-auto pt-1 font-sans>
       <div v-for="data in evData" :key="data.id" class="bg-[#2D2D2D]" rounded-md px-3 py-2>
         {{ data.name }}
       </div>
