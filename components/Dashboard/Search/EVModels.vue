@@ -17,7 +17,6 @@ async function loadData(value?: string) {
   // @ts-expect-error typings are messed up
   evData.value = data?.evModels
   dataLoading.value = false
-  consola.info(data)
 }
 
 await loadData()
