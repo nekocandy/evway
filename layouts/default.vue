@@ -3,8 +3,11 @@
 </script>
 
 <template>
-  <div>
-    <slot />
+  <div h-screen flex gap-2>
+    <Sidebar />
+    <div h-full w-full flex-1>
+      <slot />
+    </div>
   </div>
 </template>
 
