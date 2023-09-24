@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import consola from 'consola'
+import { nanoid } from 'nanoid'
 import { protectedProcedure, router } from '../trpc'
 import { getRedisClient } from '~/lib/database/redis'
 import { getEVModelsRepository } from '~/lib/database/models/repo'
@@ -39,6 +40,7 @@ export const evModelRouter = router({
 
       try {
         const evModel = await evModelRepo.save({
+          id: nanoid(),
           name: input,
           addedBy: ctx.user.user?.name,
           addedAt: Date.now(),
